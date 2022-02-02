@@ -1,0 +1,572 @@
+@charset "utf-8";
+@import url('notosanskr/NotoSansKR.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    font-size: 1.6px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #333;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* 공통사항 */
+
+.clearfix::after {
+    content: '';
+    width: 100%;
+    position: relative;
+    display: block;
+    clear: both;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+    width: 1920px;
+    height: 17970px;
+    background: url('../images/background.jpg')no-repeat center;
+    background-size:cover;
+}
+
+.wrap>div {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.swiper-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    position: relative;
+    display: block;
+    margin: 100px auto;
+}
+
+.brand-txt {
+    position: absolute;
+    display: block;
+    left: 475px;
+    top: 0px;
+}
+
+.cont {
+    position: relative;
+    display: block;
+    margin-top: 150px;
+    padding: 0 120px;
+}
+
+.d-cont {
+    position: relative;
+    display: block;
+    margin: 50px auto 0 auto;
+    width: 1060px;
+}
+
+.word-right-position {
+    position: absolute;
+    display: block;
+    right: 0;
+}
+
+.word-left-position {
+    position: absolute;
+    display: block;
+    left: 0;
+}
+
+.absolute {
+    position: absolute;
+    display: block;
+}
+
+.w-top1 {
+    top: 0;
+}
+
+.w-top2 {
+    top: 85px;
+}
+
+/* gotop */
+.gotop {
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    box-shadow: 3px 3px 6px 1px rgba(12, 46, 116, 0.3);
+    border-radius: 50px;
+    background:url('../images/gotop.png')no-repeat center;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    transition: background 0.3s;
+    z-index: 999;
+}
+
+.gotop:hover {
+    background:url('../images/gotop_hover.png')no-repeat center;
+}
+/* header */
+.header {
+    width: 1920px;
+    height: 970px;
+    background: url('../images/header_bg.jpg');
+    background-size: cover;
+}
+
+.h-cont {
+    position: absolute;
+    display: block;
+    top: 150px;
+}
+
+.cont1 {
+    right: 250px;
+}
+
+.cont2 {
+    right: 0px;
+}
+
+.h-item {
+    position: absolute;
+    display: block;
+}
+
+.h-item1 {
+    right: 660px;
+    top: 120px;
+    animation: updown 2s infinite ease-in-out;
+}
+
+.h-item2 {
+    right: -200px;
+    top: 725px;
+    animation: updown2 2s infinite ease-in-out;
+}
+
+.h-item3 {
+    left: -200px;
+    top: 455px;
+    animation: updown2 2s infinite ease-in-out;
+}
+
+/* overview */
+.overview {
+    padding: 100px 0;
+    background-color: #00c6a9;
+    text-align: center;
+}
+
+.overview-txt {
+    display: block;
+    margin: 50px auto 0 auto;
+}
+
+/* concept */
+.concept {
+    padding-top: 150px;
+    margin-bottom: 150px;
+}
+
+.concept-cont {
+    position: relative;
+    display: block;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.concept-cont-img {
+    position: absolute;
+    display: block;
+}
+
+.c-cont1 {
+    left: 350px;
+    top: -50px;
+}
+
+.c-cont2 {
+    right: 350px;
+    bottom: -50px;
+}
+
+/* logo */
+.logo {
+    padding-top: 150px;
+    margin-bottom: 250px;
+}
+
+.logo-cont1 {
+    display: block;
+    margin-bottom: 120px;
+}
+
+.logo-img {
+    position: absolute;
+    display: block;
+    top: -80px;
+}
+
+.logo-img1 {
+    left: 490px;
+}
+
+.logo-img2 {
+    right: 120px;
+}
+
+.logo-line {
+    width: 100%;
+    display: block;
+    padding-top: 80px;
+}
+
+.logo-cont2 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+/* color */
+.color {
+    margin-top: 200px;
+}
+
+.color-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* typo */
+.typo {
+    margin-top: 200px;
+}
+
+.typo-cont {
+    display: block;
+    padding: 0 120px;
+    margin-top: 80px;
+}
+
+.typo-cont>img {
+    display: block;
+    margin-bottom: 60px;
+}
+
+/* icon */
+.icon {
+    margin: 200px 0;
+    /* height: 500px; */
+}
+/* wireframe */
+
+.wireframe{
+    position: relative;
+    display: block;
+    width: 1920px;
+    background-color: #e4efed;
+    padding: 40px 0;
+    margin-bottom: 200px;
+}
+.wireframe>.title{
+    margin-top: 80px;
+}
+.wireframe-cont {
+    position: relative;
+    display: block;
+    width: 1920px;
+    height: 930px;
+    background: url('../images/wireframe_bg.png')0 center / 1920px repeat-x;
+    animation: moving 30s linear infinite;
+}
+
+
+.sign-up {
+    margin-top: 100px;
+    height: 970px;
+}
+
+.sign-up-cont {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.sign-up-cont>img:nth-child(1) {
+    margin-top: -100px;
+}
+
+.sign-up-cont>img:nth-child(2) {
+    margin: 100px -20px 0 -20px;
+}
+
+.sign-up-cont>img:nth-child(3) {
+    margin-top: 300px;
+}
+
+/* menubar */
+.menubar {
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.manubar-img2 {
+    position: absolute;
+    left: 430px;
+    top: 50px;
+    z-index: -1;
+}
+
+.menubar-cont-img {
+    position: absolute;
+    display: block;
+    right: 120px;
+}
+
+.m-c-img1 {
+    top: 100px;
+}
+
+.m-c-img2 {
+    top: 220px;
+}
+
+.m-c-img3 {
+    top: 340px;
+}
+
+.m-c-img4 {
+    top: 455px;
+}
+
+.m-c-img5 {
+    top: 570px;
+}
+
+/* main */
+.main {
+    margin-top: 200px;
+}
+
+.word-center-position {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.w-c-top2 {
+    margin: 50px auto 0 auto;
+}
+
+.main-cont {
+    text-align: center;
+}
+
+.swiper-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-58%);
+    top: 91px;
+    height: 20px;
+}
+
+.main-line {
+    position: absolute;
+    display: block;
+    bottom: -80px;
+    left: 270px;
+    z-index: -1;
+}
+
+.main-explain {
+    position: absolute;
+    display: block;
+    margin: 0 10px;
+}
+
+.m-ex1 {
+    right: 0;
+    top: 190px;
+}
+
+.m-ex2 {
+    top: 90px;
+}
+
+.main-cont-phone {
+    margin-top: 950px;
+}
+
+.main-etc {
+    position: relative;
+    display: block;
+    width: 1920px;
+    height: 500px;
+    margin-top: 950px;
+    background: url('../images/main_bottom_bg.png')no-repeat center;
+    background-size: cover;
+}
+
+/* mate */
+.mate {
+    margin-top: 150px;
+}
+
+.mate-title {
+    display: block;
+}
+
+.mate-txt {
+    display: block;
+    margin-top: 50px;
+}
+
+.mate-cont-img {
+    position: absolute;
+    display: block;
+    left: 420px;
+}
+
+.mate-img1 {
+    top: 95px;
+}
+
+.mate-img2 {
+    top: 150px;
+}
+
+.mate-img3 {
+    top: 250px;
+}
+
+.mate-img4 {
+    top: 395px;
+}
+
+.mate-img5 {
+    top: 545px;
+}
+
+.mate-cont {
+    margin-top: 150px;
+}
+
+.mate-cont-img1 {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.mate-cont-img2 {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.mate-cont-img3 {
+    position: absolute;
+    right: 0;
+    top: 190px;
+}
+
+/* health */
+.health {
+    margin-top: 250px;
+}
+
+.health-cont {
+    width: 1180px;
+}
+
+.health-top {
+    top: 210px;
+}
+
+.h-top {
+    margin-top: 50px;
+}
+
+/* community */
+.community {
+    margin-top: 200px;
+}
+
+.community-img1 {
+    top: 180px;
+    left: 115px;
+}
+
+.community-img2 {
+    top: 225px;
+    right: 155px;
+}
+
+/* mypage */
+.mypage {
+    position: relative;
+    display: block;
+    margin-top: 1300px;
+    margin-bottom: 150px;
+}
+
+.mypage-img2{
+    left: 420px;
+    top: 200px;
+}
+.mypage-img3{
+    left: 420px;
+    top: 350px;
+}
